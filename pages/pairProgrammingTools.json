@@ -1,0 +1,126 @@
+[
+  {
+    "Name": "Teams",
+    "Requires Good VPN": "N",
+    "Requires Fast Network": "N",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "N",
+    "Allows Annotation": "N",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "N",
+    "Audio/Video/Screen Share": "Y",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Not made for pairing",
+      "No low latency remote control"
+    ]
+  },
+  {
+    "Name": "Zoom",
+    "Requires Good VPN": "N",
+    "Requires Fast Network": "N",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "N",
+    "Allows Annotation": "N",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "N",
+    "Audio/Video/Screen Share": "Y",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Not made for pairing",
+      "No low latency remote control"
+    ]
+  },
+  {
+    "Name": "Tuple",
+    "Requires Good VPN": "Y",
+    "Requires Fast Network": "Y",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "Y",
+    "Allows Annotation": "Y",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "N",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Good and require fast network"
+    ]
+  },
+  {
+    "Name": "Pop",
+    "Requires Good VPN": "Y",
+    "Requires Fast Network": "Y",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "Y",
+    "Allows Annotation": "Y",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "Y",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Good and require fast network"
+    ]
+  },
+  {
+    "Name": "Drovio",
+    "Requires Good VPN": "Y",
+    "Requires Fast Network": "Y",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "Y",
+    "Allows Annotation": "Y",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "Y",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Good and require fast network"
+    ]
+  },
+  {
+    "Name": "LiveShare (VS Code)",
+    "Requires Good VPN": "N",
+    "Requires Fast Network": "N",
+    "Full Screen Sharing": "N",
+    "Each Person Has Own Cursor": "Maybe - Collaborative Editor",
+    "Allows Annotation": "N",
+    "Allows Control of Other Computer": "N",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "N",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Collaborative Editor",
+      "No full screen share",
+      "Not necessarily looking at same thing"
+    ]
+  },
+  {
+    "Name": "Code With Me (Jetbrains)",
+    "Requires Good VPN": "Maybe",
+    "Requires Fast Network": "Maybe",
+    "Full Screen Sharing": "N",
+    "Each Person Has Own Cursor": "Maybe - Collaborative Editor",
+    "Allows Annotation": "N",
+    "Allows Control of Other Computer": "N",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "Y",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Collaborative Editor",
+      "Not necessarily looking at same thing",
+      "No full screen share"
+    ]
+  },
+  {
+    "Name": "VNC / Built in Screen Sharing",
+    "Requires Good VPN": "Y",
+    "Requires Fast Network": "Y",
+    "Full Screen Sharing": "Y",
+    "Each Person Has Own Cursor": "N",
+    "Allows Annotation": "N",
+    "Allows Control of Other Computer": "Y",
+    "Can Be Installed On Site - Info Stays Within Corporate Network": "N",
+    "Audio/Video/Screen Share": "N",
+    "General Category": [
+      "Screen Sharing/Communication",
+      "Good and require fast network"
+    ]
+  }
+]
