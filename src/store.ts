@@ -1,6 +1,6 @@
 import {combineReducers, configureStore, PreloadedState} from '@reduxjs/toolkit'
 
-import toolReducer from './toolSlice'
+import sliceReducer from './slice'
 import { logger } from 'redux-logger'
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
@@ -11,7 +11,7 @@ const persistConfig = {
 }
 
 const reducer = persistReducer(persistConfig, combineReducers({
-  tool: toolReducer
+  slice: sliceReducer
 }))
 
 export function makeStore(preloadedState?: PreloadedState<RootState>) {
@@ -25,17 +25,7 @@ export function makeStore(preloadedState?: PreloadedState<RootState>) {
 }
 
 const store = makeStore()
-/**
- *  if (module.hot) {
- *     module.hot.accept('./path/to/reducer', () => {
- *       // This fetch the new state of the above reducers.
- *       const nextRootReducer = require('./path/to/reducer').default
- *       store.replaceReducer(
- *         persistReducer(persistConfig, nextRootReducer)
- *       )
- *     })
- *   }
- * */
+
 export type AppState = ReturnType<typeof store.getState>
 export type RootState = ReturnType<typeof reducer>
 export type AppDispatch = typeof store.dispatch

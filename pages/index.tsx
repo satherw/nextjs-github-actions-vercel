@@ -1,52 +1,14 @@
-import {useRouter} from "next/router";
-import {useAppDispatch, useAppSelector} from "../src/hook";
-import {selectTool, updateTool} from "../src/toolSlice";
+import {useAppSelector} from "../src/hook";
+import {selectTitle} from "../src/slice";
 
 export default function Home() {
 
-  const router = useRouter()
-  const dispatch = useAppDispatch()
-  const selectedTool = useAppSelector(selectTool)
-
-  const tools = [
-    'Teams',
-    'Zoom',
-    'Tuple',
-    'Pop',
-    'Drovio',
-    'LiveShare/VS Code',
-    'CodeWithMe/Jetbrains',
-    'VNC/BuiltInScreenSharing',
-    'Other'
-  ];
-
-  const onContinue = () => {
-    selectedTool && router.push(`/results`)
-  }
-
-  const onToolSelected = (tool: string) => {
-    dispatch(updateTool(tool))
-  }
+  const title: string = useAppSelector(selectTitle);
 
   return (
       <div>
-        <div>HELLO WORLD! For each question, select all that apply</div>
-        <p>What do your engineering teams use for pair programming?</p>
-
-        {tools.map(tool => (
-            <div key={tool} role="checkbox" onClick={() => onToolSelected(tool)}>
-              <input
-                  aria-label={tool}
-                  type="checkbox"
-                  onChange={() => onToolSelected(tool)}
-                  checked={selectedTool === tool}
-              />
-              <label>{tool}</label>
-            </div>
-        ))}
-
-        <button onClick={onContinue} disabled={!selectedTool}>Continue</button>
-
+        <h1>{title}</h1>
+        <p>An example NextJs app deployed through the Vercel CLI on GitHub Actions</p>
       </div>
   )
 }
