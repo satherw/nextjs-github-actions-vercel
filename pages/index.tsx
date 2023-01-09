@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
       <div>
-        <div>For each question, select all that apply</div>
+        <div>HELLO WORLD! For each question, select all that apply</div>
         <p>What do your engineering teams use for pair programming?</p>
 
         {tools.map(tool => (
